@@ -22,24 +22,24 @@ public class MovieDiscount {
         boolean isCoupon = input.nextBoolean();
       
         // Read in a true/false value
-        if (age < 13 || age > 65) {
+        if (age < 13 || age >= 65) {
         	if (isCoupon) { 
         		// Total price when customer fits the age restriction and has coupon
-        		System.out.println("Your ticket costs $9.50.");
+        		System.out.println("Your ticket costs $9.5.");
         	}
         	else { 
         		//Total price when customer only fits the age restriction
-        		System.out.println("Your ticket costs $11.50.");
+        		System.out.println("Your ticket costs $11.5.");
         	}
         }
         else { 
         	if (isCoupon) {
         		//Total price when customer only has the coupon
-            	System.out.println("Your ticket costs $12.50.");
+            	System.out.println("Your ticket costs $12.5.");
                 }
         	else {
         	//Total price when customer doesn't fit in age restriction or have coupon
-        	System.out.println("Your ticket costs $14.50.");
+        	System.out.println("Your ticket costs $14.5.");
 
         }
     }
